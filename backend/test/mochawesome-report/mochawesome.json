@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-04T05:46:28.211Z",
+    "end": "2019-06-04T05:46:28.296Z",
+    "duration": 85,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5fa787da-e323-4d23-a962-3c02e1455795",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "3780c746-a29d-4d1b-93e4-9544fbcf8682",
+        "title": "##### chech login()",
+        "fullFile": "/home/admin1/Bridgelabz_workspace/ChatAppNew/backend/test/LoginTest.js",
+        "file": "/LoginTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "login successfull",
+            "fullTitle": "##### chech login() login successfull",
+            "timedOut": false,
+            "duration": 74,
+            "state": "passed",
+            "speed": "medium",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request(app)\n.post('/login')\n.send({\n    \"email\":\"cshrome@gmail.com\",\n    \"password\":\"chrome\"\n})\n.expect(200)\n.end(function(err,res){\n    let response=JSON.parse(res.text)\n//  console.log(response)\n//    expect(response.data.email).equal(\"ramesh@gmail.com\");\n//    expect(response.status).equal(true);\n    done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "65d55a1a-b25c-4035-9a2e-c958e16bb816",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "65d55a1a-b25c-4035-9a2e-c958e16bb816"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 74,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

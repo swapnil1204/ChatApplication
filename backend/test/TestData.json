@@ -1,0 +1,18 @@
+{
+    "register": {
+        "firstname": "aaaaa",
+        "lastname": "aaaaa",
+        "email": "aaaaa@gmail.com",
+        "password": "aaaaa"
+    },
+    "login": {
+        "email": "aaaaa@gmail.com",
+        "password": "aaaaa"
+    },
+    "forgotPassword": {
+        "email": "aaaaa@gmail.com"
+    },
+    "resetPassword": {
+        "password": "bbbbb"
+    }
+}

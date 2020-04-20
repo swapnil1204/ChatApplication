@@ -1,0 +1,1 @@
+Assert.IsNotNull( result );

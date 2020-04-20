@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="ChatApp">
+
+<head>
+    <link href="../CSS/Register.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+</head>
+<center>
+
+    <body ng-controller="practiceControl">
+            <div class="div1">
+                <!-- <img src="../Assets/register.jpeg" height="100px" width="180px"> -->
+                <h1>Registration practice practice Practice Form</h1>
+
+                <div style="margin-top:60px">
+                        <p>firstName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="name"
+                            placeholder='enter your name' ng-model="firstName">
+                        
+                </div>
+                <div style="margin-top:20px">
+                    <p>lastName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="txtLastName"
+                        placeholder='enter your last name' ng-model="lastName">     
+                </div>
+
+
+                <div style="margin-top:20px;margin-left:15px;">
+                    
+                    <p>email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" id="txtemail"
+                        placeholder='emailid@example.com' ng-model="email">
+                       
+                </div>
+                <div style="margin-top:20px;">
+                    <p>password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password"
+                        placeholder='*****' ng-model="password">
+                       
+                </div>
+
+                <div style="margin-top:20px;">
+                    <p>password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="cnfpwd"
+                        placeholder='*****' ng-model="cnfpwd">
+                       
+                </div>
+
+                <div>
+                    <button class="btn" ng-click=register()>register</button>
+                </div>
+
+            <div style="margin-top:20px;margin-left:20px;float: center;">
+                <a ui-sref="Login">login</a>
+            </div>
+            
+        </div>
+    </body>
+</center>
+
+</html>

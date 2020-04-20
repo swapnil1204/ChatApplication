@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="ChatApp">
+
+<head>
+    <link href="../CSS/Login.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<center>
+
+    <body ng-controller="controlLogin">
+        <div class="div1">
+            <img src="../Assets/download.jpeg" height="90px" width="110px">
+            <h1>Login</h1>
+
+            <div style="margin-top:60px">
+                <form name="myForm">
+                    <p>emailid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                            type="email" placeholder='emailid@example.com' name="myInput" ng-model="email">
+                </form>
+            </div>
+
+            <div style="margin-top:20px">
+
+                <form name="myForm">
+                    <p>password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"
+                            placeholder='**********' name="PassWord" ng-model="password">
+
+                </form>
+            </div>
+
+            <div>
+                <button class="btn" ng-click=login()>login</button>
+            </div>
+
+            <div style="margin-top:20px;margin-left:20px;float: center; ">
+                <a ui-sref="Register">create account...</a>
+            </div>
+
+            <div style="margin-top:20px;margin-left:20px;float: center;">
+                <a ui-sref="forgotPassword">forgotpassword?</a>
+            </div>
+
+        </div>
+    </body>
+    
+</center>
+
+</html>

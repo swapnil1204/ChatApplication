@@ -1,0 +1,101 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-06-03T12:00:33.268Z",
+    "end": "2019-06-03T12:00:33.427Z",
+    "duration": 159,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "1ff72819-505d-4a5d-941f-9befdbb1f69c",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "204819be-93f5-4a08-9fef-84dd63a7a029",
+        "title": "Testing chat appplication for registration",
+        "fullFile": "/home/admin1/Bridgelabz_workspace/ChatApp/backend/test/RegistrationTest.js",
+        "file": "/test/RegistrationTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "23c52e30-8f98-49bd-98bd-8096fea39b56",
+            "title": "registration page",
+            "fullFile": "/home/admin1/Bridgelabz_workspace/ChatApp/backend/test/RegistrationTest.js",
+            "file": "/test/RegistrationTest.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "user registered successfully",
+                "fullTitle": "Testing chat appplication for registration registration page user registered successfully",
+                "timedOut": false,
+                "duration": 0,
+                "state": "failed",
+                "pass": false,
+                "fail": true,
+                "pending": false,
+                "code": "chai.request(server).post('/register').send(data2.register).end((err, res) => {\n    if (err) {\n        err.should.have.status(500);\n    } else {\n        res.should.have.status(200);\n    }\n    done();\n})",
+                "err": {
+                  "message": "AssertionError: expected { Object (domain, _events, ...) } to have status code 200 but got 500",
+                  "estack": "AssertionError: expected { Object (domain, _events, ...) } to have status code 200 but got 500\n    at chai.request.post.send.end (test/RegistrationTest.js:29:37)\n    at Test.Request.callback (node_modules/superagent/lib/node/index.js:716:12)\n    at parser (node_modules/superagent/lib/node/index.js:916:18)\n    at IncomingMessage.res.on (node_modules/superagent/lib/node/parsers/json.js:19:7)\n    at endReadableNT (_stream_readable.js:1064:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)",
+                  "diff": "- 500\n+ 200\n"
+                },
+                "isRoot": false,
+                "uuid": "c589c4b6-c708-489d-8d80-c89a43407b00",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [],
+            "failures": [
+              "c589c4b6-c708-489d-8d80-c89a43407b00"
+            ],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

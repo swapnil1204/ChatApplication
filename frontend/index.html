@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <!-- <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.25/angular-ui-router.min.js"></script>
+    
+    <script src="./app.js"></script>
+    <script src="./controller/LoginController.js"></script>
+    <script src="./services/LoginService.js"></script>
+    <script src="./controller/RegisterContoller.js"></script>
+    <script src="./services/RegisterService.js"></script>
+    <script src="./controller/ForgotPasswordController.js"></script>
+    <script src="./services/ForgotPasswordService.js"></script>
+    <script src="./controller/ResetPasswordController.js"></script>
+    <script src="./services/ResetPasswordServices.js"></script>
+    <script src='./controller/Practice.js'></script>
+    <script src='/services/practiceService.js'></script>
+
+    <!-- url as env variable  -->
+    <script src='../frontend/env.js'></script>
+    <!-- socket io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+
+    <script src="./controller/dashboardController.js"></script>
+    <script src="./services/dashboardService.js"></script>
+  </head>
+<body ng-app="ChatApp">
+    <ui-view>
+    </ui-view>
+
+</html>
