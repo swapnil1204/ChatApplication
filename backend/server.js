@@ -16,6 +16,7 @@ app.use(cors({credentials: false}));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
 /*** A middleware is a function that has access to the request and response objects. 
 It can execute any code, transform the request object to req.body, or return a response.*/
 app.use(bodyParser.json());

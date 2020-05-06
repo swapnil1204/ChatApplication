@@ -8,6 +8,7 @@ require('dotenv').config;
  * @file : SendingMail.js
  * @exports : sendingMail()
  */
+
 exports.sendingMail = (url) => {
     try {
         console.log("email=========>", process.env.email)
@@ -28,9 +29,11 @@ exports.sendingMail = (url) => {
             if (err) {
                 console.log("error while sending mail", err)
             } else
-                console.log('mail send ', info);
+                console.log('mail send  this is message id ', info.messageId);
         });
     } catch (error) {
         console.log("Exception not handled while sending mail");
     }
 }
+
+

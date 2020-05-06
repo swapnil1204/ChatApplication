@@ -9,18 +9,18 @@
 </head>
 
 <body ng-controller="chatController">
-    <body class="background">
+    <body>
         <header>
             <h1>CHAT APP</h1>
             <!-- <span > -->
-                <h5 class="user" >Welcome <h2>{{currUserName}}</h2></h5>
+                <h5>Welcome <h2>{{currUserName}}</h2></h5>
             <!-- </span> -->
             <button type="button" ng-click="logout()" style="float: unset;" style="margin:660px" class="logbutton">LogOut</button>
         </header>
 
         <section>
             <nav>
-                <div class="side">
+                <div>
                     <ul>
                         <p><b>
                                 <h3>Contacts</h3>
@@ -34,25 +34,14 @@
 
             <article>
                 <div class="back">
-                    <!-- <section>
-                        <form>
-                            <div class="chatLogs" ng-repeat="chat in allUserArr  track by $index">
-                                <div class="chat friend" ng-show="currUser != chat.senderUserId">
-                                    <p class="chatMsg"> {{chat.message}}</p>
-                                </div>
-                                <div class="chat self" ng-show="currUser == chat.senderUserId">
-                                    <p class="chatMsg"> {{chat.message}}</p>
-                                </div>
-                            </div>
-                    </section> -->
                     <section>
                         <form>
                             <div ng-repeat="chat in allUserArr  track by $index">
                                 <div class="friendchatMsg" ng-show="currUser != chat.senderUserId">
-                                    <p > {{recieverUserName }}{{chat.message}}</p>
+                                    <p > {{chat.message}}</p>
                                 </div>
                                 <div class="selfchatMsg" ng-show="currUser == chat.senderUserId">
-                                    <p > {{x.firstname}} {{chat.message}}</p>
+                                    <p > {{chat.message}}</p>
                                 </div>
                             </div>
                     </section>
