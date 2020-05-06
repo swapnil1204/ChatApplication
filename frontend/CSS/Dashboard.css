@@ -3,6 +3,39 @@
     width: 100%;
 }
 
+button{
+    background-color: #ee3434;
+    color: rgb(207, 70, 70);
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 25%;
+}
+
+.names {
+    border: black;
+    background-color:rgb(92, 147, 230);
+    border-radius: 10px;
+    padding: 1px;
+    margin: 5px 0;
+}
+
+.text {
+    width: 100%;
+    height: 10%;
+    margin: 20px 40px 0px 0px;
+    box-sizing: border-box;
+}
+
+.gropChat {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: 0px 0px 0px;
+}
+
 .singleChat {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,38 +55,19 @@ span {
     font-size: 18px
 }
 
-.friend .chatMsg {
+.friendchatMsg {
     background: rgb(92, 147, 230);
     color: rgb(20, 2, 9);
     text-align: left;
     float: left;
 }
 
-.names {
-    border: black;
-    background-color:rgb(92, 147, 230);
-    border-radius: 10px;
-    padding: 1px;
-    margin: 5px 0;
-}
-
-.self .chatMsg {
+.selfchatMsg {
     color: rgb(20, 5, 2);
     text-align: right;
     /* background: rgba(144, 148, 111, 0.363); */
     background-color:white;
     float: right;
-}
-
-button {
-    background-color: #ee3434;
-    color: rgb(207, 70, 70);
-    padding: 14px 20px;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 25%;
 }
 
 button:hover {
@@ -148,12 +162,7 @@ nav ul {
     text-align: center;
 }
 
-.gropChat {
-    float: right;
-    width: 70%;
-    height: 100%;
-    margin: 0px 0px 0px;
-}
+
 
 article {
     float: right;
@@ -180,11 +189,4 @@ article section {
     color: rgb(151, 186, 238);
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.text {
-    width: 100%;
-    height: 10%;
-    margin: 20px 40px 0px 0px;
-    box-sizing: border-box;
 }

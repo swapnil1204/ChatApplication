@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+
 /**
  * @function : generateToken()
  * @description : this method write to generate token for given payload.
@@ -7,6 +8,7 @@ const jwt = require('jsonwebtoken');
  * @file : jwtToken.js
  * @exports : generateToken()
  */
+
 module.exports = {
     generateToken(payload) {
         const token = jwt.sign({
