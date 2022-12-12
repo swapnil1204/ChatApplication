@@ -21,7 +21,7 @@
     "dot-env": "0.0.1",
     "dotenv": "^8.0.0",
     "env": "0.0.2",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "express-validator": "^5.3.1",
     "install-peerdeps": "^1.10.2",
     "jsonwebtoken": "^8.5.1",
